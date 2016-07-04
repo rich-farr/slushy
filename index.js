@@ -1,6 +1,12 @@
 import React from 'react'
-import { render } from 'react-dom'
+import reactDom from 'react-dom'
 import App from './components/app'
 
-render(<App name='jeff' />, document.querySelector('main'))
-console.log('welcome to jeff')
+class Greeter extends React.Component {
+	constructor(props) {
+		super(props)
+	}
+}
+
+reactDom.render(<App name="this freakin'app" />, document.querySelector('main'))
+console.log("welcome to this freakin' app")
